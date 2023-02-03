@@ -40,6 +40,13 @@ Azure Machine Learning workspaces have a five built-in roles that are available 
 | **Contributor** | View, create, edit, or delete (where applicable) assets in a workspace. For example, contributors can create an experiment, create or attach a compute cluster, submit a run, and deploy a web service. |
 | **Owner** | Full access to the workspace, including the ability to view, create, edit, or delete (where applicable) assets in a workspace. Additionally, you can change role assignments. |
 
+|Role|Manage Workspace|Manage Access/Roles|Manage Compute Targets|Manage Experiments|Manage Models|Manage Data|Manage Deployment|
+|--|--|--|--|--|--|--|--|
+|Owner|X|X|X|X|X|X|X|
+|Contributor|||X|X|X|X|X|
+|Reader||||||||
+|Data Scientist||||X|X|X|X|
+
 In addition, [Azure Machine Learning registries](how-to-manage-registries.md) have a **AzureML Registry User** role that can be assigned to a registry resource to grant data scientists user-level prermissions. For administrator-level permissions to create or delete registries, use **Contributor** or **Owner** role.
 
 | Role | Access level |
